@@ -31,28 +31,46 @@
         android:hint="Ingresa un número"
         android:inputType="number" />
 
-    <Button
-        android:id="@+id/button_suma"
+    <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="SUMA" />
+        android:gravity="center"
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/button2_resta"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="RESTA" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/button3_division"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="DIVISIÓN" />
+            <Button
+                android:id="@+id/button_suma"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:text="SUMA" />
 
-    <Button
-        android:id="@+id/button4_multiplicacion"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="MULTIPLICACIÓN" />
+            <Button
+                android:id="@+id/button_resta"
+                android:layout_width="189dp"
+                android:layout_height="wrap_content"
+                android:text="RESTA" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button_division"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DIVISIÓN" />
+
+            <Button
+                android:id="@+id/button_multiplicacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MULTIPLICACIÓN" />
+        </TableRow>
+
+    </TableLayout>
 
 </LinearLayout>
