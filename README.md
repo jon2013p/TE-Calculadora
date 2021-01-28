@@ -2,6 +2,10 @@
 
 El presente proyecto es una aplicación nativa para Android desarrollada desde la herramienta Android Studio y basado en su totalidad en el lenguaje Java. 
 
+Integrantes:
+- Chantal Alejandra Morales Rojas
+- Jonathan Israel Vásquez Vivas
+
 Para la construcción de esta aplicación se siguieron ciertos pasos. 
 
 Interfaz
