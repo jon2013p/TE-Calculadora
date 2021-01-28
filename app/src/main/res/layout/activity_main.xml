@@ -43,15 +43,21 @@
 
             <Button
                 android:id="@+id/button_suma"
-                android:layout_width="220dp"
+                android:layout_width="146dp"
                 android:layout_height="wrap_content"
-                android:text="SUMA" />
+                android:text="+" />
 
             <Button
                 android:id="@+id/button_resta"
-                android:layout_width="189dp"
+                android:layout_width="143dp"
                 android:layout_height="wrap_content"
-                android:text="RESTA" />
+                android:text="-" />
+
+            <Button
+                android:id="@+id/button_porcentaje"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="%" />
         </TableRow>
 
         <TableRow
@@ -62,13 +68,31 @@
                 android:id="@+id/button_division"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="DIVISIÓN" />
+                android:text="/" />
 
             <Button
                 android:id="@+id/button_multiplicacion"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="MULTIPLICACIÓN" />
+                android:text="*" />
+
+            <Button
+                android:id="@+id/button_potencia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="^" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/button_pitagoras"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="pitagoras" />
         </TableRow>
 
     </TableLayout>
