@@ -10,10 +10,15 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
+    double percentaje;
+
     private Button btn_suma;
     private Button btn_resta;
     private Button btn_division;
     private Button btn_multiplicacion;
+    private Button btn_porcentaje;
+    private Button btn_potencia;
+    private Button btn_pitagoras;
 
     private TextView text_respuesta;
 
@@ -68,6 +73,32 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        btn_porcentaje = findViewById(R.id.button_porcentaje);
+        btn_porcentaje.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                text_respuesta.setText(porcentaje(Integer.parseInt(edit_numero_uno.getText().toString()),Integer.parseInt(edit_numero_dos.getText().toString()))+ "");
+            }
+        });
+
+        btn_potencia = findViewById(R.id.button_potencia);
+        btn_potencia.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                text_respuesta.setText(potencia(Integer.parseInt(edit_numero_uno.getText().toString()),Integer.parseInt(edit_numero_dos.getText().toString()))+ "");
+            }
+        });
+
+        btn_pitagoras = findViewById(R.id.button_pitagoras);
+        btn_pitagoras.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                text_respuesta.setText(pitagoras(Integer.parseInt(edit_numero_uno.getText().toString()),Integer.parseInt(edit_numero_dos.getText().toString()))+ "");
+            }
+        });
+
+
+
 
 
     }
@@ -93,4 +124,14 @@ public class MainActivity extends AppCompatActivity {
 
         return respuesta;
     }
+
+    public double porcentaje (int a, int b) {
+        percentaje = (double)((b*100)/a);
+        return percentaje;
+    }
+
+    public double potencia (int a, int b) { return Math.pow(a,b); }
+
+    public double pitagoras (int a, int b) {return Math.hypot(a,b); }
+
 }
